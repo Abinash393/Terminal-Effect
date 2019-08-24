@@ -1,5 +1,5 @@
 // function([string1, string2],target id,[color1,color2])    
-consoleText(['Hello World!', 'Alt Campus', 'Javascript Is Awesome.','ᕦ(ò_óˇ)ᕤ'], 'text',['tomato','limegreen','crimson']);
+consoleText(['Hello World!', 'Alt Campus', 'Javascript Is Awesome.','ᕦ(ò_óˇ)ᕤ'], 'text',['tomato',' coral','chartreuse', 'crimson']);
 
 function consoleText(words, id, colors) {
   if (colors === undefined) colors = ['#fff'];
@@ -25,6 +25,7 @@ function consoleText(words, id, colors) {
         letterCount += x;
         waiting = false;
       }, 1000)
+
     } else if (letterCount === words[0].length + 1 && waiting === false) {
       waiting = true;
       window.setTimeout(function() {
@@ -32,10 +33,12 @@ function consoleText(words, id, colors) {
         letterCount += x;
         waiting = false;
       }, 1000)
+
     } else if (waiting === false) {
       target.innerHTML = words[0].substring(0, letterCount)
       letterCount += x;
     }
+
   }, 120)
   window.setInterval(function() {
     if (visible === true) {

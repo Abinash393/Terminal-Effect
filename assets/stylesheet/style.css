@@ -1,6 +1,6 @@
-@import url(https://fonts.googleapis.com/css?family=Khula:700);
+
 body {
-  background: #111;
+  background: rgba(17, 17, 17, 0.596);
   font-family: 'Lexend Deca', sans-serif;
 }
 .hidden {
@@ -8,7 +8,7 @@ body {
 }
 .console-container {
  
-  font-family:Khula;
+  font-family:'Lexend Deca';
   font-size:4em;
   text-align:center;
   height:200px;
