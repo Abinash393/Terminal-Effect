@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Khula:700);
 body {
   background: #111;
+  font-family: 'Lexend Deca', sans-serif;
 }
 .hidden {
   opacity:0;
